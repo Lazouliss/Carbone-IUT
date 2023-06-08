@@ -28,3 +28,14 @@ Clone local
 mkdir S4-qualite-developpement\GitLab
 cd S4-qualite-developpement\GitLab
 
+Rappels de git : add et commit sans conflit (travail individuel)
+- L'autre étudiant.e essaye de pusher. Que se passe-t-il ? Pourquoi ? Que faut-il faire d'abord ?
+
+Cela ne marche pas. Car il n'a pas les mêmes fichiers dans son dossier. Il faut pull avant.
+
+- La 2e personne fait de même avec sont fichier (que faut-il faire avant de commencer)?
+
+git pull
+
+Rappels de git : add et commit avec conflit (travail individuel)
+
