@@ -30,5 +30,8 @@ cd S4-qualite-developpement\GitLab
 
 Rappels de git : add et commit sans conflit (travail individuel)
 - L'autre étudiant.e essaye de pusher. Que se passe-t-il ? Pourquoi ? Que faut-il faire d'abord ?
+le working directory n'est pas à jour avec le dépôt car un nouveau fichier existe, il faut pull
+
+
 
 
