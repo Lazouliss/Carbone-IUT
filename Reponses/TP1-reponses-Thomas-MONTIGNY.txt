@@ -55,3 +55,11 @@ c'est le numéro de revision du commit
 enlever l'indentifiant dans l'url : -/tree/5ed18461487ae341998f573e88f9b9eb31368f3e
 
 Analyse des commits dans un dépôt local (travail individuel)
+
+Copie du projet dans le dépôt local (travail de groupe)
+
+
+
+
+
+
