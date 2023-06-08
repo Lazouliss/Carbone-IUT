@@ -1,0 +1,30 @@
+Création d'une clé SSH
+- En ligne de commande, allez dans le répertoire ~/.ssh (où la tilde signifie le chemin de votre répertoire personnel). Notez la commande necéssaire.
+
+cd .ssh
+mkdir .ssh
+cd .ssh
+
+- Que signifie SSH? Citez quelques propriété de ce protocôle.
+
+Secure Socket Shell, permet une connexion entre les 2 clients + est chiffré
+
+- Vos deux clefs serviront-elles à un cryptage symétrique ou assymétrique?
+
+cryptage assymétrique (deux clés différentes)
+
+- Quelle est la différence entre ces deux modes de cryptage?
+
+symétrique = 2 clients avec la même clé
+assymétrique = 2 clés différentes
+
+- Une clef privée sert à crypter. Pourquoi faut-il la crypter elle-même? 
+
+pour ne pas se la faire voler (sinon il suffit de prendre le fichier et c'est finis)
+
+Clone local
+- De retour un ligne de commande, créez un nouveau répertoire pour le cours S4-qualite-de. Dedans, créez un dossier nommé Gitlab. Placez-vous dans ce dernier dossier. Notez les commandes utilisées.
+
+mkdir S4-qualite-developpement\GitLab
+cd S4-qualite-developpement\GitLab
+
