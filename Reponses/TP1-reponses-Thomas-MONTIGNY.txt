@@ -39,3 +39,19 @@ git pull
 
 Rappels de git : add et commit avec conflit (travail individuel)
 
+Rappels de git : push, pull et gestion des conflits (travail de groupe)
+- L'autre étudiant·e tente de pousser sont commit. Que se passe-t-il ? Pourquoi ? Que faut-il faire d'abord ?
+
+ça bloque. Car la version pécédente du fichier est différente entre le serveur et sa machine. git pull
+
+Analyse des commits sur le serveur (travail de groupe)
+- Examiner l'URL dans la barre de navigation. Par quoi se termine-t-elle ?
+
+-/tree/5ed18461487ae341998f573e88f9b9eb31368f3e
+c'est le numéro de revision du commit
+
+- Comment revenir au dernier commit (toujours sur le serveur) ?
+
+enlever l'indentifiant dans l'url : -/tree/5ed18461487ae341998f573e88f9b9eb31368f3e
+
+Analyse des commits dans un dépôt local (travail individuel)
