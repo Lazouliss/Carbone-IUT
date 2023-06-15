@@ -58,7 +58,15 @@ Analyse des commits dans un dépôt local (travail individuel)
 
 Copie du projet dans le dépôt local (travail de groupe)
 
+Compiler votre code en ligne de commande:
 
+        #Supposons que la racine de votre dépot est dans ~/S4-qualite-dev/carboniut
+        cd ~/S4-qulite-dev/carboneiut
+        ls            #Vous devriez voir ici le répertoire src/ (ou équivalent) avec vos sources
+        mkdir -p bin    #Vérifiez ce que signifie l'option -p
+        javac -d bin src/*/*.java   #Vérifiez ce que signifie la commande javac et l'option -p
+        ls bin/          #Vous devez voir ici les fichiers .class
+        java -cp bin Presentation.UIMain  #Lancer l'appli, en remplaçant "controlleur" par la classe qui contient votre méthode main
 
 
 
