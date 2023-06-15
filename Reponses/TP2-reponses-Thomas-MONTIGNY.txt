@@ -1,0 +1,46 @@
+Classe Bilan.java :
+- Attributs :
+
+minCO2 : double, le minimum de CO2 consommé en une semaine par l'utilisateur
+
+maxCO2 : double, le maximum de CO2 consommé en une semaine par l'utilisateur
+
+data : Data, lien vers les données stockées dans la classe Data (les valeurs de base)
+
+moyCO2 : double, la quantité de CO2 moyenne consommée par l'utilisateur chaque semaine
+
+nbCO2 : double, nombre de semaines écoulées (permet de faire la moyenne sur plusieurs semaines)
+
+- Méthodes :
+
+Bilan() : crée un Bilan et initialise les données (Data)
+
+void add(String, int, double) : ajoute la quantité de CO2 consommée (double) avec les valeurs d'un panel (String). L'entier est utilisé pour l'indice des données d'une des listes de la classe Data (dans ce cas précis seulement pour les transports).
+
+double getMinCO2() : renvois la quantité minimum de C02 consommé
+
+double getMaxCO2() : renvois la quantité maximum de C02 consommé
+
+double getMoyCO2() : renvois la quantité moyenne de C02 consommé
+
+void reset() : réinitialise le minCO2 et le maxCO2 et incrémente le nbCO2 (pour faire la moyenne sur plusieurs semaines)
+
+- Proposition de jeux de tests :
+Tests abstraits :
+
+void add() : 
+CAS             TEST ABSTRAIT               TEST CONCRET            VALEURS ENSUITE
+
+Général         valueToAdd >= 0,            valueToAdd=10,          minCO2=10
+                nomPnl existe               nomPnl="Nourriture"     maxCO2=10
+                                                                    moyCO2=10
+    
+Limite          valueToAdd = int32,         valueToAdd=2147483648,  minCO2=2147483648
+                nomPnl existe               nomPnl="Nourriture"     maxCO2=2147483648
+                                                                    moyCO2=2147483648
+                                                                    
+Limite          valueToAdd = 0,             valueToAdd=0,           minCO2=0
+                nomPnl existe               nomPnl="Nourriture"     maxCO2=0
+                                                                    moyCO2=0
+                
+Inattendu       nom de panel inexistant     nomPnl = toto           aucuns changements
