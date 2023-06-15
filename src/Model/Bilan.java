@@ -8,14 +8,12 @@ public class Bilan {
 	private double minCO2;
 	private double maxCO2;
 	private Data data;
-	private Presentation main;
 	
 	private double moyCO2=0;
 	private double nbCO2=0;
 	
-	public Bilan(Presentation m) {
+	public Bilan() {
 		this.data = new Data();
-		this.main = m;
 	}
 	
 	public void add(String nom, int indice, double valueToAdd) {
