@@ -1,0 +1,8 @@
+SSH signifie Secure Shell. C'est un protocole de connexion qui se repose sur l'achange de clé de chiffrement. Ainsi chaque segment TCP sera chiffré. 
+
+Les clefs serviront à un chiffrage asymétrique 
+
+Lorsque le chiffrement est symétrique, il utilise la même clé à la fois pour déchiffrer mais aussi pour déchiffrer. Un chiffrement asymétrique utilises lui, des clefs différentes. 
+
+Il est nécessaire de la crypter afin de la sécuriser.
+ 
