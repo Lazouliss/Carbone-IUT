@@ -32,3 +32,18 @@ Rappels de git : add et commit sans conflit (travail individuel)
 - L'autre étudiant.e essaye de pusher. Que se passe-t-il ? Pourquoi ? Que faut-il faire d'abord ?
 ça bloque car je n'ai pas tout les fichiers qui sont sur le dépôt, il faut pull
 
+ La 2e personne fait de même avec sont fichier (que faut-il faire avant de commencer)?
+
+git pull
+
+- L'autre étudiant·e tente de pousser sont commit. Que se passe-t-il ? Pourquoi ? Que faut-il faire d'abord ?
+
+ça bloque. Car le contenu du fichier est différente entre le serveur et sa machine. git pull
+
+nalyse des commits sur le serveur (travail de groupe)
+- Examiner l'URL dans la barre de navigation. Par quoi se termine-t-elle ?
+le checksum du commit
+
+Comment revenir au dernier commit (toujours sur le serveur) ?
+retirer le checksum du lien et /commit/
+
