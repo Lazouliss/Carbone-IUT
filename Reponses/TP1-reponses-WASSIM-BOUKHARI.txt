@@ -38,7 +38,7 @@ git pull
 
 - L'autre étudiant·e tente de pousser sont commit. Que se passe-t-il ? Pourquoi ? Que faut-il faire d'abord ?
 
-ça bloque. Car le contenu du fichier est différente entre le serveur et sa machine. git pull
+ça bloque. Car le contenu du fichier est différente entre le serveur et sa machine. git pull#Vérifiez ce que signifie l'option -p
 
 nalyse des commits sur le serveur (travail de groupe)
 - Examiner l'URL dans la barre de navigation. Par quoi se termine-t-elle ?
@@ -46,4 +46,10 @@ le checksum du commit
 
 Comment revenir au dernier commit (toujours sur le serveur) ?
 retirer le checksum du lien et /commit/
+
+#Vérifiez ce que signifie l'option -p
+si les dossiers n'existe pas, les créer
+
+#Vérifiez ce que signifie la commande javac et l'option -d
+indique où placer les fichiers compilés
 
