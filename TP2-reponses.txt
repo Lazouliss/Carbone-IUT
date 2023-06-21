@@ -1,0 +1,17 @@
+La classe Bilan sera appelée par la classe Presentation qui est une classe phare de l'architecture Modele Vue Presentation, sachant qu'elle permet de faire le lien entre les panels et les classes du modele comme la classe Data.
+
+Attributs :
+
+transportNom : String() :  nom du transport sélectionné. Les possibilités sont : 
+		Voiture, Co-voiturage, Velo, Transport en commun, Autre.
+transportMin : Double() : la quantité de CO2 minimum émise en une semaine (en kg)
+transportMax : Double() : la quantité de CO2 maximum émise en une semaine (en kg)
+foodCO2 : Double() : la quantité de CO2 émise par la consommation en nourriture. Elle se calcule en fonction du nombre de repas consommés dans une semaine entre les repas végans, les repas végétariens, les repas a base de boeuf ou a base d'autres viandes.
+computerCO2 : Double() : la quantité de CO2 émise par l'utilisation d'ordinateur. Par exemple : l'utilisateur peut se servir des ordinateurs mis à disposition par l'IUT ou de son ordinateur personnel. 
+
+
+Méthodes : 
+
+public Data(): constructeur : initialise la quantité de CO2 émise par chaque élément. Ainsi pour la nourriture, un repas végan vaut 0.4, un repas végétarient 0.5, un repas à base de boeuf 7 et un repas a base d'autre viande 1.1
+L'utilisation d'un ordinateur personel rajoute 5kg tanis que l'utilisation des pc de l'IUT en rajoutent 2.5. 
+Pour les transports, La voiture consomme au minimum 4,5kg et maximum 20, le co-voiturage entre 2 et 10kg, le vélo entre 0.001 et 0.22, les transports en commun entre 0.2 et 1 et les antres moyens de transports entre 1 et 20.
