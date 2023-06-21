@@ -39,6 +39,13 @@ public class Bilan {
 		}
 	}
 
+// TP3 : inventer : methode moyenne pondérée 
+// spec tests
+// prog
+// methode minimal qui rep au tests
+// verif que tests marchent
+// implémenter methode
+
 	public double getMinCO2() {
 		return (double)Math.round(minCO2 * 1000d) / 1000d;		// round to 0.001
 	}
