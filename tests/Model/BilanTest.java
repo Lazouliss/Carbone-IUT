@@ -22,7 +22,7 @@ public class BilanTest {
 
 		bilan = new Bilan();
 		assertEquals(0, bilan.getMinCO2());
-                assertEquals(0, bilan.getMaxCO2());
+        assertEquals(0, bilan.getMaxCO2());
 
 	}
 
