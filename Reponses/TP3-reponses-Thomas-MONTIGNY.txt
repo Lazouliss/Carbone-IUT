@@ -29,30 +29,30 @@ void reset() : réinitialise le minCO2 et le maxCO2 et incrémente le nbCO2 (pou
 
 - Nouvelle Méthode :
 
-double moyennePondere(double pondMin, double pondMax) : pondère le minimum de CO2 et le maximum de C02 consommé par les deux coefficients en argument, puis retourne la moyenne. Accepte seulement des valeurs en dessous de 100 pour ne pas prendre le risque d'atteindre des valeurs trop grandes.
+double moyennePonderee(double pondMin, double pondMax) : pondère le minimum de CO2 et le maximum de C02 consommé par les deux coefficients en argument, puis retourne la moyenne. Accepte seulement des valeurs en dessous de 100 pour ne pas prendre le risque d'atteindre des valeurs trop grandes.
 
 - Proposition de jeux de tests :
 Tests abstraits :
 
-double moyennePondere(double pondMin, double pondMax) : 
+double moyennePonderee(double pondMin, double pondMax) : 
 CAS             TEST ABSTRAIT               TEST CONCRET            VALEURS ENSUITE
 
-Général         pondMin > 0,                pondMin=1,              retourne 9
+Général         pondMin > 0,                pondMin=1,              retourne 7.33
                 pondMax > 0                 pondMax=2,
-                                            minCO2=7,
+                                            minCO2=2,
                                             maxCO2=10
 
-Limite          pondMin = 1,                pondMin=1,              retourne 8.5
+Limite          pondMin = 1,                pondMin=1,              retourne 6
                 pondMax = 1                 pondMax=1,
-                                            minCO2=7,
+                                            minCO2=2,
                                             maxCO2=10
 
-Limite          pondMin = 100,              pondMin=100,            retourne 8.5
+Limite          pondMin = 100,              pondMin=100,            retourne 6
                 pondMax = 100               pondMax=100,
-                                            minCO2=7,
+                                            minCO2=2,
                                             maxCO2=10
 
 Inattendu       pondMin<0 ou pondMax<0,     pondMin=-13,            retourne -1
                 pondMin>100 ou pondMax>100, pondMax=1,
-                                            minCO2=7,
+                                            minCO2=2,
                                             maxCO2=10

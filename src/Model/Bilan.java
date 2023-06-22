@@ -1,6 +1,7 @@
 package Model;
 
 import javax.swing.JTextField;
+import javax.xml.crypto.Data;
 
 import Presentation.Presentation;
 
@@ -65,5 +66,13 @@ public class Bilan {
 		this.maxCO2=0;
 		//this.moyCO2=0;		// pas sûr d'avoir besoin de reset la moyenne, elle peut être calculée sur plusieurs semaines / tentatives
 		this.nbCO2++;			// pour permettre la moyenne sur plusieurs semaines
+	}
+
+	public double moyennePonderee(double pondMin, double pondMax) {
+		if(pondMin > 0 || pondMin <= 100 || pondMax > 0 || pondMax <= 100) {
+			return ((this.minCO2*pondMin+this.maxCO2*pondMax)/(pondMin+pondMax));
+		} else {
+			return -1;
+		}
 	}
 }
