@@ -12,7 +12,7 @@ import View.PanelMain;
 public class Presentation implements IPresentation {
 
 	private PanelMain pm;
-	private Bilan bilan = new Bilan(this);
+	private Bilan bilan = new Bilan();
 	private Data data = new Data();
 	
 	// Getters
