@@ -1,0 +1,58 @@
+Notre projet fonctionne correctement, nous avons donc décidé (avec votre accord) de ne pas créer le dépôt carboneiutsimple et de créer une nouvelle méthode en suivant le TP3
+
+Classe Bilan.java (copié collé du TP2) :
+- Attributs :
+
+minCO2 : double, le minimum de CO2 consommé en une semaine par l'utilisateur
+
+maxCO2 : double, le maximum de CO2 consommé en une semaine par l'utilisateur
+
+data : Data, lien vers les données stockées dans la classe Data (les valeurs de base)
+
+moyCO2 : double, la quantité de CO2 moyenne consommée par l'utilisateur chaque semaine
+
+nbCO2 : double, nombre de semaines écoulées (permet de faire la moyenne sur plusieurs semaines)
+
+- Méthodes :
+
+Bilan() : crée un Bilan et initialise les données (Data)
+
+void add(String, int, double) : ajoute la quantité de CO2 consommée (double) avec les valeurs d'un panel (String). L'entier est utilisé pour l'indice des données d'une des listes de la classe Data (dans ce cas précis seulement pour les transports).
+
+double getMinCO2() : renvois la quantité minimum de C02 consommé
+
+double getMaxCO2() : renvois la quantité maximum de C02 consommé
+
+double getMoyCO2() : renvois la quantité moyenne de C02 consommé
+
+void reset() : réinitialise le minCO2 et le maxCO2 et incrémente le nbCO2 (pour faire la moyenne sur plusieurs semaines)
+
+- Nouvelle Méthode :
+
+double moyennePondere(double pondMin, double pondMax) : pondère le minimum de CO2 et le maximum de C02 consommé par les deux coefficients en argument, puis retourne la moyenne. Accepte seulement des valeurs en dessous de 100 pour ne pas prendre le risque d'atteindre des valeurs trop grandes.
+
+- Proposition de jeux de tests :
+Tests abstraits :
+
+double moyennePondere(double pondMin, double pondMax) : 
+CAS             TEST ABSTRAIT               TEST CONCRET            VALEURS ENSUITE
+
+Général         pondMin > 0,                pondMin=1,              retourne 9
+                pondMax > 0                 pondMax=2,
+                                            minCO2=7,
+                                            maxCO2=10
+
+Limite          pondMin = 1,                pondMin=1,              retourne 8.5
+                pondMax = 1                 pondMax=1,
+                                            minCO2=7,
+                                            maxCO2=10
+
+Limite          pondMin = 100,              pondMin=100,            retourne 8.5
+                pondMax = 100               pondMax=100,
+                                            minCO2=7,
+                                            maxCO2=10
+
+Inattendu       pondMin<0 ou pondMax<0,     pondMin=-13,            retourne -1
+                pondMin>100 ou pondMax>100, pondMax=1,
+                                            minCO2=7,
+                                            maxCO2=10
