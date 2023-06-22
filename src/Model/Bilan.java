@@ -16,27 +16,29 @@ public class Bilan {
 		this.data = new Data();
 	}
 	
-	public void add(String nom, int indice, double valueToAdd) {
-		switch(nom) {
-			case "Transport" : {
-				this.minCO2+=data.getTransportMin()[indice];
-				this.maxCO2+=data.getTransportMax()[indice];
-				this.moyCO2+=(data.getTransportMin()[indice]+data.getTransportMax()[indice])/2;
-				break;
-			}
-			case "Nourriture" : {
-				this.minCO2+=valueToAdd;
-				this.maxCO2+=valueToAdd;
-				this.moyCO2+=valueToAdd;
-				break;
-			}
-			case "EmpreinteNumerique" : {
-				this.minCO2+=valueToAdd;
-				this.maxCO2+=valueToAdd;
-				this.moyCO2+=valueToAdd;
-				break;
-			}
-		}
+	public void add(String nomPnl, int indice, double valueToAdd) {
+	    if(!(valueToAdd < 0 || indice > data.getTransportMax().length || indice < 0)) {
+	        switch(nomPnl) {
+			    case "Transport" : {
+				    this.minCO2+=data.getTransportMin()[indice];
+				    this.maxCO2+=data.getTransportMax()[indice];
+				    this.moyCO2+=(data.getTransportMin()[indice]+data.getTransportMax()[indice])/2;
+				    break;
+			    }
+			    case "Nourriture" : {
+				    this.minCO2+=valueToAdd;
+				    this.maxCO2+=valueToAdd;
+				    this.moyCO2+=valueToAdd;
+				    break;
+			    }
+			    case "EmpreinteNumerique" : {
+				    this.minCO2+=valueToAdd;
+				    this.maxCO2+=valueToAdd;
+				    this.moyCO2+=valueToAdd;
+				    break;
+			    }
+		    }
+	    }
 	}
 
 // TP3 : inventer : methode moyenne pondérée 
