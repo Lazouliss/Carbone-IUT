@@ -98,10 +98,9 @@ public class BilanTest {
 	}
 
 	@Test
-	public void TestIndiceInatendu(){
+	public void TestIndiceInattendu(){
 
 		this.bilan.reset();
-                Data data= new Data();
                 this.bilan.add("Transport", 10, 0);
                 assertEquals(0,bilan.getMaxCO2(),0);
                 assertEquals(0, bilan.getMinCO2(),0);
