@@ -99,4 +99,24 @@ public class BilanTest {
 		//assertEquals(tmoyC02, bilan.getMoyCO2(),0);
 	}
 	
+	@Test
+	public void TestIndiceInferieur(){
+	    this.bilan.reset();
+	    Data data= new Data();
+	    
+		this.bilan.add("Transport", 0, 0);
+		assertEquals(data.getTransportMax()[0],bilan.getMaxCO2(),0);
+		assertEquals(data.getTransportMin()[0], bilan.getMinCO2(),0);
+	}
+	
+	@Test
+	public void TestIndiceSuperieur(){
+	    this.bilan.reset();
+	    Data data= new Data();
+		this.bilan.add("Transport", 4, 0);
+		assertEquals(data.getTransportMax()[4],bilan.getMaxCO2(),0);
+		assertEquals(data.getTransportMin()[4], bilan.getMinCO2(),0);
+	}
+	
+	
 }
