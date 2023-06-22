@@ -35,4 +35,28 @@ public class BilanTest {
 
 }
 
+	@Test 
+	public void TestaddValueZero(){
+	    private double tmaxC02=bilan.getMaxCO2();
+	    private double tminC02=bilan.getMinCO2();
+	    private double tmoyC02=bilan.getMoyCO2();
+	    
+		this.bilan.add("Nourriture", 0, 0 );
+		assertEquals(tmaxC02,bilan.getMaxCO2());
+		assertEquals(tminC02, bilan.getMinCO2());
+		assertEquals(tmoyC02, bilan.getMoyCO2());
+	}
+	
+		public void TestaddValueNeg(){
+	    private double tmaxC02=bilan.getMaxCO2();
+	    private double tminC02=bilan.getMinCO2();
+	    private double tmoyC02=bilan.getMoyCO2();
+		this.bilan.add("Nourriture", 0, -10 );
+		assertEquals(tmaxC02,bilan.getMaxCO2());
+		assertEquals(tminC02, bilan.getMinCO2());
+		assertEquals(tmoyC02, bilan.getMoyCO2());
+	}
+
+
+
 
