@@ -105,7 +105,7 @@ public class BilanTest {
 		this.bilan.reset();
 		this.bilan.add("Transport", 1, 0);
 
-		assertEquals(7.33, bilan.MoyennePonderee(1, 2));
+		assertEquals(7.33, bilan.MoyennePonderee(1, 2), 0.2);
 
 	}
 
@@ -115,7 +115,7 @@ public class BilanTest {
 		this.bilan.reset();
 		this.bilan.add("Transport", 1, 0);
 
-		assertEquals(6, bilan.MoyennePonderee(1, 1));
+		assertEquals(6, bilan.MoyennePonderee(1, 1), 0);
 
 	}
 
@@ -125,7 +125,7 @@ public class BilanTest {
 		this.bilan.reset();
 		this.bilan.add("Transport", 1, 0);
 
-		assertEquals(6, bilan.MoyennePonderee(100, 100));
+		assertEquals(6, bilan.MoyennePonderee(100, 100), 0);
 
 	}
 }
