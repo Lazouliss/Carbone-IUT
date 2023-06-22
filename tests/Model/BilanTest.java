@@ -102,30 +102,30 @@ public class BilanTest {
 	@Test
 	public void testPondereeGeneral(){
 
-			this.bilan.reset();
-			this.bilan.add("Transport", 1, 0);
+		this.bilan.reset();
+		this.bilan.add("Transport", 1, 0);
 
-			assertEquals(7.33, bilan.MoyennePonderee(1, 2));
+		assertEquals(7.33, bilan.MoyennePonderee(1, 2));
 
 	}
 
 	@Test
 	public void testPondereeLimiteMin(){
 
-			this.bilan.reset();
-			this.bilan.add("Transport", 1, 0);
+		this.bilan.reset();
+		this.bilan.add("Transport", 1, 0);
 
-			assertEquals(6, bilan.MoyennePonderee(1, 1));
+		assertEquals(6, bilan.MoyennePonderee(1, 1));
 
 	}
 
 	@Test
 	public void testPondereeLimiteMax(){
 
-			this.bilan.reset();
-			this.bilan.add("Transport", 1, 0);
+		this.bilan.reset();
+		this.bilan.add("Transport", 1, 0);
 
-			assertEquals(6, bilan.MoyennePonderee(100, 100));
+		assertEquals(6, bilan.MoyennePonderee(100, 100));
 
 	}
 }
