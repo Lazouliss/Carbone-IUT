@@ -1,7 +1,6 @@
 package Model;
 
 import javax.swing.JTextField;
-import javax.xml.crypto.Data;
 
 import Presentation.Presentation;
 
@@ -42,13 +41,6 @@ public class Bilan {
 	    }
 	}
 
-// TP3 : inventer : methode moyenne pondérée 
-// spec tests
-// prog
-// methode minimal qui rep au tests
-// verif que tests marchent
-// implémenter methode
-
 	public double getMinCO2() {
 		return (double)Math.round(minCO2 * 1000d) / 1000d;		// round to 0.001
 	}
@@ -68,8 +60,15 @@ public class Bilan {
 		this.nbCO2++;			// pour permettre la moyenne sur plusieurs semaines
 	}
 
+// TP3 : inventer : methode moyenne pondérée 
+// spec tests
+// prog
+// methode minimal qui rep au tests
+// verif que tests marchent
+// implémenter methode
+
 	public double moyennePonderee(double pondMin, double pondMax) {
-		if(pondMin > 0 || pondMin <= 100 || pondMax > 0 || pondMax <= 100) {
+		if(pondMin > 0 && pondMin <= 100 && pondMax > 0 && pondMax <= 100) {
 			return ((this.minCO2*pondMin+this.maxCO2*pondMax)/(pondMin+pondMax));
 		} else {
 			return -1;
