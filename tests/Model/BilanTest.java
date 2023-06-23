@@ -100,6 +100,30 @@ public class BilanTest {
 	}
 	
 	@Test
+	public void TestIndiceInattendu(){
+
+		this.bilan.reset();
+        this.bilan.add("Transport", 10, 0);
+        assertEquals(0,bilan.getMaxCO2(),0);
+        assertEquals(0, bilan.getMinCO2(),0);
+        //assertEquals(tmoyC02, bilan.getMoyCO2(),0);
+
+
+	}
+
+	@Test
+	public void TestReset(){
+
+		this.bilan = new Bilan();
+		this.bilan.add("Nourriture", 0, 50);
+		this.bilan.reset();
+		assertEquals(0,bilan.getMaxCO2(),0);
+        assertEquals(0, bilan.getMinCO2(),0);
+
+	}
+
+	
+	@Test
 	public void testPondereeGeneral(){
 
 		this.bilan.reset();
